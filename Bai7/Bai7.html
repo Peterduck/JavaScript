@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Check day in years</title>
+  <style>
+    h3 {
+        background-color: burlywood;
+        text-align: center;
+    }
+  </style>
+</head>
+  <h3 > chương trình JavaScript/Java để tìm hiểu xem ngày 1 tháng 1 có phải là Chủ nhật từ năm 2014 đến năm 2050 </h3>
+  <button type="button" onclick="checkDay()">Check Day</button>
+<body>
+  <script>
+    function checkDay(){
+      for(var i = 2014;i<=2050;i++){
+        const day = new Date(i,0,1); // month: 0 là tháng 1
+        if(day.getDay()==0){
+          document.writeln("Năm có ngày 1-1 rời vào chủ nhật từ 2014-2050: "+i+"</br>");
+          document.writeln("--------------------------------------------------------------------------"+"</br>")
+        }
+      }
+    }
+  </script>
+</body>
+</html>
