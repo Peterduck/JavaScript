@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Check year</title>
+</head>
+<body>
+  <h3>Chương trình tính năm nhuận</h3>
+  <p>Một năm nhuận được xác định bằng cách thỏa mãn hai điều kiện là: chia hết cho bốn và không chia hết cho một trăm</p>
+  <h4>Nhập năm cần xác định</h4><input type="text" id="year">
+  <button type="button" onclick="checkYear()">check</button>
+  <script>
+    function checkYear(){
+      var year = document.getElementById("year").value;
+      console.log(year);
+      if((year%4===0) && (year%100!==0)){
+        document.writeln("Là năm nhuận");
+      }
+      else{
+        document.writeln("Không phải năm nhuận");
+      }
+    }
+  </script>
+</body>>
+</html>
