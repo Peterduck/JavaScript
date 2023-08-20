@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Triangle area</title>
+</head>
+<body>
+  Chiều dài cạnh a <input type="text" id="canhA"></br>
+  Chiều dài cạnh b <input type="text" id="canhB"></br>
+  Chiều dài cạnh c <input type="text" id="canhC"></br>
+  <script>
+    function getValueId(){
+      let a = document.getElementById("canhA").value;
+      let b = document.getElementById("canhB").value;
+      let c = document.getElementById("canhC").value;
+      countAreaTriangle(a,b,c);
+    }
+    function countAreaTriangle(a,b,c){
+      let perimeter = Number (a) + Number (b) + Number(c);
+      let areaTriangle = Math.pow(perimeter*(perimeter - Number(a))*(perimeter - Number(b))*(perimeter - Number (c)),2);
+      document.writeln("Result is: " + areaTriangle);
+    }
+  </script>
+  <button type="button" onclick="getValueId()">here</button>
+</body>
+</html>
