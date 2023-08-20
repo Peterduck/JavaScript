@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Count</title>
+</head>
+<body>
+Nhập x <input type="text" id="x">
+Nhập y <input type="text" id="y">
+<button type="button" onclick="Count()" id>Xuất</button>
+<script>
+  function Count(){
+    let x = document.getElementById("x").value;
+    let y = document.getElementById("y").value;
+    document.writeln("Phép nhân hai số x*y = "+(x*y));
+    document.writeln("Phép chia hai số x:y = "+(x/y));
+  }
+</script>
+
+</body>
+</html>
