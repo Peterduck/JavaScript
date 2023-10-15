@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Viết chương trình JavaScript/Java để xóa một ký tự ở vị trí xác định trong một chuỗi đã cho và trả về chuỗi đã sửa.</p>
+    <script>
+        function fixString(str, position){
+            if(str.length >position){
+                console.log("Chuỗi gốc: "+str);
+                let fixString = str.replace(str.charAt(position),"");
+                console.log("Chuỗi đã sửa: "+fixString);
+            }
+        }
+        let str1 = fixString("Đỗ Thành Phát", 3);
+    </script>
+</body>
+</html>

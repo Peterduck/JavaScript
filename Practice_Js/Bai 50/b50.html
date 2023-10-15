@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Viết chương trình JavaScript/Java để viết hoa chữ cái đầu tiên của mỗi từ trong một chuỗi cho trước.</p>
+    <label>Nhập chuỗi</label>
+    <input type="text" id="aBox">
+    <button type="button" id="submitButtom" onclick="fixString()">fix</button>
+    <p id="result"></p>
+    <script>
+        function fixString(){
+            let str = document.getElementById("aBox").value ; 
+            let first = str.toUpperCase();
+            document.getElementById("result").innerHTML = first.charAt(0)+str.slice(1);
+        }
+    </script>
+</body>
+</html>

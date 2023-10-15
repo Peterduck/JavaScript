@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Viết chương trình JavaScript/Java để thay thế mọi ký tự trong một chuỗi đã cho bằng ký tự theo sau nó trong bảng chữ cái.</p>
+    <lable>Nhập chuỗi</lable>
+    <input type="text" id="aBox">
+    <button type="button" id="submitButton" onclick="replaceChar()">replace</button>
+    <p id="result"></p>
+    <script>
+        function replaceChar(){
+            let alphabet = "abcdefghijklmnopqestuvwyz";
+            let str = document.getElementById("aBox").value ; 
+            let fix;
+            
+            for(i=0;i<alphabet.lenght;i++){
+                if(str.charAt(0)==alphabet.charAt(i)){
+                    for(j=0;j<str.length;j++){
+                        fix += alphabet.charAt(j);
+                    
+                    }
+                }
+            }
+            document.getElementById("result").innerHTML = fix;
+        }
+    </script>
+</body>
+</html>

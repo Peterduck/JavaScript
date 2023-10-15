@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Viết chương trình JavaScript/Java để tạo một chuỗi khác bằng cách thêm "Py" vào trước một chuỗi đã cho. 
+        Nếu chuỗi đã cho bắt đầu bằng "Py" hãy trả về chuỗi gốc.</p>
+    <label>Nhập chuỗi cần xử lý</label>
+    <input type="text" id="textBox">
+    <button type="button" id="submitButton">Process</button>
+    <p id="result"></p>
+    <script>
+        document.getElementById("submitButton").onclick = function(){
+            let textBox = document.getElementById("textBox").value ;
+            
+            if(textBox.startsWith("Py")){
+                document.getElementById("result").innerHTML = textBox;
+            }
+            else {
+                document.getElementById("result").innerHTML= "Py"+ textBox;
+            }
+        }
+    </script>
+</body>
+</html>

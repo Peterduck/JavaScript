@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Viết chương trình JavaScript/Java để kiểm tra xem một số đã cho có tồn tại trong phạm vi 40..10000 hay không.
+        Ví dụ 40 trong 40 và 4000</p>
+    <lable>Nhập số cần kiểm tra</lable>
+    <input type="text" id="aBox">
+    <button type="button" id="submitButton" onclick="checkNumber()">check</button>
+    <p id="result"></p>
+    <script>
+        function checkNumber(){
+            let num = document.getElementById("aBox").value ; 
+                num = Number(num);
+            
+            if(num>=40 && num<=4000){
+                document.getElementById("result").innerHTML = num +" thuộc [40;1000]";
+            }
+            else {
+                document.getElementById("result").innerHTML = num +" không thuộc [40;1000]";
+
+            }
+        }
+    </script>
+</body>
+</html>

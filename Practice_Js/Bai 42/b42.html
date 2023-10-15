@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Viết chương trình JavaScript/Java để kiểm tra xem ba số đã cho đang tăng theo strict hoặc soft mode.  
+Lưu ý: strict mode -> 10, 15, 31 : soft mode -> 24, 22, 31 hoặc 22, 22, 31
+    </p>
+    <label>Số thứ nhất</label>
+    <input type="text" id="aBox"><br>
+    <label>Số thứ hai</label>
+    <input type="text" id="bBox"><br>
+    <label>Số thứ ba</label>
+    <input type="text" id="cBox"><br>
+    <button type="button" id="submitButton">check</button>
+    <p id="result"></p>
+    <script>
+        "use strict"; 
+        
+        document.getElementById("submitButton").onclick = function(){
+            let a = document.getElementById("aBox").value ; 
+        let b = document.getElementById("bBox").value ;
+        let c = document.getElementById("cBox").value ; 
+
+        a = Number(a);
+        b = Number(b);
+        c = Number(c);
+        
+        if(a<b && a<c && b<c){
+            document.getElementById("result").innerHTML = "Ba số đã cho đang tăng dần";
+        }
+        else {
+            document.getElementById("result").innerHTML = "Ba số đã cho không theo qui luật tăng dần";
+        }
+        }
+    </script>
+</body>
+</html>

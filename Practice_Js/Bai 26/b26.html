@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Viết chương trình JavaScript/Java để tạo một chuỗi từ một chuỗi cho trước. Điều này được thực hiện bằng cách lấy 3 ký tự cuối cùng và thêm chúng ở cả phía trước và phía sau.
+        Độ dài chuỗi phải từ 3 trở lên</p>
+    <p> ctr + shift + I</p>
+    <script>
+        function fixString(str){
+            if(str.length >3){
+                return str.slice(str.length-3,str.length) + str + str.slice(str.length-3,str.length);
+                console.log("Chuỗi đã fix: "+fixString());
+            }
+            else {
+                console.log("Chuỗi bé hơn 3, không đạt yêu cầu");
+            }
+        }
+        console.log(fixString("Xin chào"));
+        console.log(fixString("Hi!"));
+    </script>
+</body>
+</html>

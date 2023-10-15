@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Viết chương trình JavaScript/Java để đảo ngược một chuỗi đã cho</p>
+    <lable>Nhập vào một chuỗi tùy ý</lable>
+    <input type="text" id="aBox">
+    <button type="button" id="create" onclick="creString()">create</button>
+    <p id="result"></p>
+    <script>
+        function creString(){
+            let text = document.getElementById("aBox").value ; 
+            let fixText ="";
+            for (i=0; i<text.length;i++){
+                fixText = text.charAt(i)+fixText;
+            }
+            document.getElementById("result").innerHTML = fixText;
+        }
+    </script>
+</body>
+</html>
